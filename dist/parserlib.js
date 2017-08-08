@@ -4021,7 +4021,7 @@ function PropertyValuePart(text, line, col, optionalHint) {
             case "em":
             case "rem":
             case "ex":
-            case "px":
+            case "rpx":
             case "cm":
             case "mm":
             case "in":
@@ -5172,7 +5172,7 @@ TokenStream.prototype = mix(new TokenStreamBase(), {
             ident = this.readName(reader.read());
             value += ident;
 
-            if (/^em$|^ex$|^px$|^gd$|^rem$|^vw$|^vh$|^vmax$|^vmin$|^ch$|^cm$|^mm$|^in$|^pt$|^pc$/i.test(ident)) {
+            if (/^em$|^ex$|^rpx$|^px$|^gd$|^rem$|^vw$|^vh$|^vmax$|^vmin$|^ch$|^cm$|^mm$|^in$|^pt$|^pc$/i.test(ident)) {
                 tt = Tokens.LENGTH;
             } else if (/^deg|^rad$|^grad$|^turn$/i.test(ident)) {
                 tt = Tokens.ANGLE;
