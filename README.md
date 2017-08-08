@@ -1,3 +1,5 @@
+# Notification
+I add some change to this css parserlib in order to do some lint for '.wxss' file, which is used in wechat miniapp development and has almost the same grammer as css language.
 # CSS Parser
 
 [![build status](https://secure.travis-ci.org/CSSLint/parser-lib.svg?branch=master)](https://travis-ci.org/CSSLint/parser-lib)
